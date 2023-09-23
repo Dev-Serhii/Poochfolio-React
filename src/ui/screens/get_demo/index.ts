@@ -1,0 +1,1 @@
+export { GetDemo as default } from './@core';

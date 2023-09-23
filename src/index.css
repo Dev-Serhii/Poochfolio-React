@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bm-menu-wrap {
+  background-color: #EDFAFE;
+  padding: 60px 30px;
+}
+
+.bm-item {
+  color: #077997;
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-family: 'MuseoSansRouned700';
+}
+
+.bm-item-list > a {
+  text-decoration: none;
+  outline: none;
+}
+
+#react-burger-menu-btn {
+  display: none !important;
+}
+
+.Dropdown-control {
+  height: 100%;
+}
+
+.Dropdown-placeholder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.Dropdown-option {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.Dropdown-option:hover {
+  background: #C9D9EF;
+}
+
+.Dropdown-menu {
+  height: 160px;
+  background: white;
+  overflow-y: auto;
+  box-shadow   : 0px 10px 15px #DFECFF;
+}
+
+.react-switch-bg > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .checked {
+  background-color: #007a7e;
+  position: relative;
+}
+
+.checked::before {
+  content: "\2714";
+  font-size: 22px;
+  color: #fff;
+  position: absolute;
+  right: 2px;
+  top: 0px;
+} */
+
+.custom-checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.custom-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.custom-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #85D8E7;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-checkbox-container:hover input ~ .custom-checkmark {
+  background-color: #BFDCE3;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-checkbox-container input:checked ~ .custom-checkmark {
+  background-color: #077997;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.custom-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-checkbox-container input:checked ~ .custom-checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom-checkbox-container .custom-checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.ReactModalPortal {
+  z-index: 100;
+  position: absolute;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #E1EAF7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #096b82;
+  border-radius: 10px;
+  background-image: url('./assets/images/scrollbar.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.day-render {
+  background: #F4F4F4 !important;
+  flex: 0 0 13.7657% !important;
+  border-radius: 4px !important;
+  text-align: start !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.day-render > abbr {
+  color: #A7ACAF !important;
+  font-size: 11px;
+  font-family: 'MuseoSansRouned500';
+}
+
+.react-calendar__month-view__days {
+  gap: 2px;
+}
+
+.react-calendar {
+  box-shadow: 10px 0.87px 50px #0779974D;
+  border: none !important;
+  border-radius: 15px;
+  padding: 2px;
+  height: auto !important;
+  height: 410px;
+}
+
+.react-calendar__tile {
+  padding: 6px !important;
+}
+
+.react-calendar__navigation__label__labelText {
+  font-family: 'MuseoSansRouned500';
+  color: #077997;
+  font-size: 18px;
+}
+
+.react-calendar__navigation button:hover {
+  background: white !important;
+}
+
+.react-calendar__navigation button:focus {
+  background: white !important;
+}
+
+.react-calendar__month-view__weekdays__weekday > abbr {
+  color: #077997 !important;
+}
+
+@media screen and (max-width: 450px) {
+  .react-calendar {
+    width: 100% !important;
+  }
+
+  .react-calendar__tile {
+    padding: 2px !important;
+  }
+
+  .react-calendar__month-view__days {
+    gap: 1.6px;
+  }
+}
+
+.ReactModal__Overlay {
+  background-color: #23222299 !important;
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+.ReactModal__Content {
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  margin-right: -50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 750px !important;
+  height: 460px !important;
+  border: none !important;
+  border-radius: 20px !important;
+  padding: 0px !important;
+}
+
+@media screen and (max-width: 830px) {
+  .ReactModal__Content {
+    width: 90% !important;
+  }
+}
+
+.intercom-support-btn {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 12px 4px #85D8E7;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.bm-burger-bars {
+  display: none;
+}

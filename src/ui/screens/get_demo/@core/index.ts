@@ -1,0 +1,1 @@
+export { GetDemo } from './GetDemo';
